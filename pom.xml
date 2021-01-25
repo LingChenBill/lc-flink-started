@@ -11,6 +11,7 @@
     <properties>
         <flink.version>1.10.1</flink.version>
         <flink.redis.version>1.0</flink.redis.version>
+        <mysql.version>5.1.46</mysql.version>
     </properties>
 
     <dependencies>
@@ -47,6 +48,13 @@
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-connector-elasticsearch6_2.12</artifactId>
             <version>${flink.version}</version>
+        </dependency>
+
+        <!--mysql config.-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
         </dependency>
 
     </dependencies>
